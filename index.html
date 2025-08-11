@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stark's Portfolio</title>
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">Adeyanju Ifeoluwa</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Adeyanju Ifeoluwa</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Adeyanju Ifeoluwa</h1>
+      <p class="section__text__p2">Backend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Ife - Resume.pdf')">
+          Download Resume
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://linkedin.com/in/ife-adeyanju-b2a9852b9" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" />
+        </a>
+        <a href="https://github.com/ife-aj" target="_blank" rel="noopener noreferrer">
+          <img src="./assets/github.png" alt="Github profile" class="icon" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img src="./assets/about-me.png" alt="About Me" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Beginner <br />Backend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Industrial Mathematics-Computer Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+          I’m a Covenant University student passionate about backend development, with a focus on Spring Boot and API design. I’m
+          actively developing fullstack projects and enhancing my portfolio to launch a successful career in remote software
+          development.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+      onclick="location.href='./#experience'" />
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container backend">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" class="icon" alt="Checkmark" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" class="icon" alt="Checkmark" />
+              <div>
+                <h3>Spring Boot</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" class="icon" alt="Checkmark" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" class="icon" alt="Checkmark" />
+              <div>
+                <h3>PostgreSQL</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" class="icon" alt="Checkmark" />
+              <div>
+                <h3>Git/GitHub</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container frontend">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" class="icon" alt="Checkmark" />
+              <div>
+                <h3>HTML/CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" class="icon" alt="Checkmark" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" class="icon arrow" alt="Arrow"
+      onclick="location.href='./#projects'" />
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/chowdome.png" alt="ChowDome" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">ChowDome</h2>
+          <p class="project-description">
+            A fullstack food ordering platform with JWT authentication and role-based access.
+          </p>
+          <p class="project-description">
+            Built with Spring Boot, MySQL, HTML/CSS/JS.
+          </p>
+          <div class="btn-container">
+            <a href="https://github.com/ife-aj/chowdome" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">
+              Github
+            </a>
+            <a href="https://storied-madeleine-8ad05f.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-color-2 project-btn">
+              Live Demo
+            </a>
+          </div>
+        </div>
+        <!-- You can add more projects here -->
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+      onclick="location.href='./#contact'" />
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" class="icon contact-icon email-icon" alt="Email" />
+        <p><a href="mailto:ifeoluwaadeyanju6@gmail.com">ifeoluwaadeyanju6gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" class="icon contact-icon" alt="LinkedIn" />
+        <p><a href="https://linkedin.com/in/ife-adeyanju-b2a9852b9">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/github.png" class="icon contact-icon" alt="GitHub" />
+        <p><a href="https://github.com/ife-aj">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+     <p>© 2025 Ifeoluwa Adeyanju. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
