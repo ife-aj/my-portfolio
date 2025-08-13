@@ -43,6 +43,11 @@
     height: 275px;
     margin: 0 auto 2rem;
   }
+  .section_pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
   .about-containers {
     margin-top: 0;
   }
@@ -92,6 +97,11 @@
     height: 46vw;
     justify-content: center;
   }
+  .section_pic-container {
+     max-width: 90%;
+    height: auto;
+    padding: 0 1rem;
+  }
   .section__text__p2 {
     font-size: 1.25rem;
   }
@@ -100,5 +110,17 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  .article-container {
+    flex-direction: column;
+    align-items: center; /* Centers images on phone */
+    gap: 1.5rem; /* Less space for mobile */
+  }
+
+  .project-img {
+    width: 90%; /* Fit phone width */
+    max-width: 300px; /* Prevent stretching */
+    height: auto;
   }
 }
