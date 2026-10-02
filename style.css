@@ -481,10 +481,6 @@ section {
   margin-top: 0.5rem;
 }
 
-.details-container.frontend {
-  align-self: flex-start;
-}
-
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -512,8 +508,10 @@ section {
 }
 
 .details-container.frontend,
-.details-container.backend {
-  width: calc(50% - 1rem);
+.details-container.backend,
+.details-container.cloud {
+  flex: 1 1 20rem;
+  max-width: 100%;
 }
 
 .experience-sub-title {
