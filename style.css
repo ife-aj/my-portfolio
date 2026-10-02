@@ -661,6 +661,13 @@ article p {
   }
 }
 
+/* an odd card left alone on the last row centres itself instead of hugging the left edge */
+@media (min-width: 641px) {
+  .projects-grid > .details-container:last-child:nth-child(3n + 1) {
+    grid-column: 2;
+  }
+}
+
 /* ===================================================================
    CONTACT
    =================================================================== */
