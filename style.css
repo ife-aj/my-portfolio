@@ -610,6 +610,13 @@ article p {
   background: #000;
 }
 
+/* square logo mark — centred on a card surface instead of cropped as a banner */
+.project-img.project-logo {
+  object-fit: contain;
+  padding: 2.75rem;
+  background: var(--surface-2);
+}
+
 .project-title {
   margin: 0 0 0.75rem;
   font-size: 1.3rem;
